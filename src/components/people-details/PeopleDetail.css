@@ -1,0 +1,34 @@
+.people-detail .image {
+  height: 120px;
+  margin: 5px;
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.people-detail .image-holder {
+  width: 30%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.people-detail .detail-holder {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.people-detail .address {
+  opacity: 0.5;
+  font-size: 0.7em;
+}
+
+.people-detail {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  border: 1px solid gray;
+  align-items: center;
+}
