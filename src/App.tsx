@@ -72,7 +72,7 @@ function App() {
       setName(name);
       getPupilResults(name, 1);
     },
-    [getPupilResults]
+    [getPupilResults, setName]
   );
 
   const setNewPageNumber = useCallback(
