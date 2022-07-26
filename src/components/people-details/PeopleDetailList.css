@@ -1,0 +1,10 @@
+.people-details-list {
+  width: 90%;
+  padding: 20px;
+  border: 1px solid black;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
