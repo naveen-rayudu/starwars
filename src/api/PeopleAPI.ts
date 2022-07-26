@@ -1,13 +1,13 @@
 import { IApiResults } from "../models/IApiResults";
 import { IPeople } from "../models/IPeople";
 
-const pupilsAPIURL = process.env.REACT_APP_BASE_URL + "people/";
+const peoplesAPIURL = process.env.REACT_APP_BASE_URL + "people/";
 
 const getPeople = (
   name: string = "",
   page: Number = 1
 ): Promise<IApiResults<IPeople>> => {
-  let url = `${pupilsAPIURL}?page=${page}`;
+  let url = `${peoplesAPIURL}?page=${page}`;
 
   if (name && name.trim()) {
     url = `${url}&search=${name.trim()}`;
@@ -22,4 +22,4 @@ const getPeople = (
   });
 };
 
-export { getPeople };
+export { getPeople, peoplesAPIURL };

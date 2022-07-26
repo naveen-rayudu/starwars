@@ -2,7 +2,6 @@ import { useCallback, useRef } from "react";
 import "./SearchBar.css";
 
 type SearchBarProps = {
-  debounceTime?: number;
   tabIndex?: number;
   placeHolder: string;
   value: string;
@@ -33,6 +32,7 @@ function SearchBar({
         placeholder={placeHolder}
         onChange={(inputEle) => onChange(inputEle.currentTarget.value)}
         ref={searchBoxRef}
+        data-testid="test-search-bar"
       />
       {value && value.length && (
         <button
@@ -40,6 +40,7 @@ function SearchBar({
           onClick={onClearText}
           className="close-button"
           type="button"
+          data-testid="test-button"
         >
           &#9447;
         </button>

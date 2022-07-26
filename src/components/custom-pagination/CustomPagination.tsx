@@ -12,7 +12,7 @@ function CustomPagination({
   setNewPageNumber,
 }: PaginationProps) {
   return (
-    <div className="custom-pagination">
+    <div className="custom-pagination" data-testid="test-custom-pagination">
       <button
         onClick={() => setNewPageNumber(currentPageNumber - 1)}
         disabled={currentPageNumber === 1}

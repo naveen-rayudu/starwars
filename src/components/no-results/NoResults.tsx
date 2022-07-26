@@ -3,7 +3,11 @@ type NoResultProps = {
 };
 
 function NoResults({ message }: NoResultProps) {
-  return <div className="noresults-container">{message}</div>;
+  return (
+    <div data-testid="test-no-results" className="noresults-container">
+      {message}
+    </div>
+  );
 }
 
 export default NoResults;

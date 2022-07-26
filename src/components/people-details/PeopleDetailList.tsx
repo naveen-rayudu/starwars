@@ -22,7 +22,7 @@ function PeopleDetailList({
   };
 
   return (
-    <div className="people-details-list">
+    <div className="people-details-list" data-testid="test-people-details-list">
       {(!data || data.length === 0) && (
         <NoResults message="No peoples found with the given name." />
       )}

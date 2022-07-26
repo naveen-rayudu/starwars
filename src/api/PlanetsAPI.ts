@@ -1,10 +1,10 @@
 import { IApiResults } from "../models/IApiResults";
 import { IPlanet } from "../models/IPlanet";
 
-const pupilsAPIURL = process.env.REACT_APP_BASE_URL + "planets/";
+const planetsAPIURL = process.env.REACT_APP_BASE_URL + "planets/";
 
 const getPlanets = (): Promise<IApiResults<IPlanet>> =>
-  fetch(pupilsAPIURL).then((response) => {
+  fetch(planetsAPIURL).then((response) => {
     if (!response.ok) {
       throw new Error("Error occured while fetching results");
     }
@@ -12,4 +12,4 @@ const getPlanets = (): Promise<IApiResults<IPlanet>> =>
     return response.json();
   });
 
-export { getPlanets };
+export { getPlanets, planetsAPIURL };

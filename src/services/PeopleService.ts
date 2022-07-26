@@ -28,7 +28,6 @@ const getPeopleDetails = async (
       page % 2 === 1 ? 0 : 5,
       page % 2 === 1 ? 5 : undefined
     );
-    console.log(pagedResults);
 
     successCallback({
       count: pupils.count,
@@ -41,4 +40,6 @@ const getPeopleDetails = async (
   }
 };
 
-export { getPeopleDetails };
+const resetPlanetResults = () => (planets = {});
+
+export { getPeopleDetails, resetPlanetResults };

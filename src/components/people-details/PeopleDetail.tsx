@@ -7,10 +7,11 @@ type PeopleDetailProps = {
 
 function PeopleDetail({ people }: PeopleDetailProps) {
   return (
-    <div className="people-detail">
+    <div className="people-detail" data-testid="test-people-detail">
       <div className="image-holder">
         <img
           className="image"
+          data-testid="test-people-detail-image"
           src={`https://robohash.org/${people.fullName}.png`}
           alt={people.fullName}
         />
